@@ -52,3 +52,10 @@ p {
 .gallery-img:hover {
   opacity: .7;
 }
+.buttons {
+  width: 960px;
+  margin: centre;}
+  
+      .action_btn {
+  width: 500px;
+  margin: centre;}
