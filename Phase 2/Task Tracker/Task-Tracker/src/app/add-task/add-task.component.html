@@ -1,0 +1,103 @@
+<div style="box-sizing: content-box;">
+<br/>
+<h1 style="border: 2; text-align: center; background-color: cornflowerblue;"> Task Tracker </h1>
+<hr/>
+</div>
+<div style = " background-color:whitesmoke ; text-align: center;">
+<mat-form-field   appearance="standard" style="text-align: center;">
+        <mat-label style="color: black;">Employee Name</mat-label>
+        <input  matinput #empname type = "text" matInput placeholder="Placeholder" style="border: 2;">
+        <!-- <label> Employee Name </label> -->
+</mat-form-field>
+<br/>
+<mat-form-field  style = "text-align: center;">
+    
+    <mat-label style="color: black;">Employee ID</mat-label>
+    <input  matinput #empid type = "text" matInput placeholder="Employee ID">
+</mat-form-field>
+<br/>
+<mat-form-field style =  "text-align: center;"> 
+    <mat-label style="color: black;">Task Name</mat-label>
+    <input  matinput #taskid type = "text" matInput placeholder="Placeholder">
+</mat-form-field>
+<br/>
+<mat-form-field style =  "text-align: center;">
+    
+    <mat-label style="color: black;">Task ID</mat-label>
+    <input  matinput #taskname  matInput placeholder="Placeholder">
+   
+</mat-form-field>
+<br/>
+<mat-form-field style =  "text-align: center;">
+    
+    <mat-label style="color: black;"> Due Date</mat-label>
+    <input  matinput #date type = "date" matInput placeholder=" Due Date">
+    </mat-form-field>
+    <br/>
+
+    <button (click) = "addTask(empname.value , empid.value , taskid.value , taskname.value , date.value)" mat-raised-button color="primary">Add Task</button>
+</div>
+<!-- <div style="border: 2 ; text-align:center;">
+<input #empname type="text" placeholder="Employee Name"/>
+<br>
+<input #empid   type="text" placeholder="Employee ID"/>
+<br>
+<input #taskid  type="text" placeholder="Task ID"/>
+<br>
+<input #taskname type = "text" placeholder="Task Name"/>
+<br>
+<input #date type = "date" placeholder=" Finish Date"/>
+<br>
+<button (click) = "addTask(empname.value , empid.value , taskid.value , taskname.value , date.value)">  Add Task</button>
+</div> -->
+<!-- <table>
+    <tr *ngFor="let contact of contacts" style="margin-bottom: 10px;">
+        <td>{{contact.descr}}</td> <td><button (click)="removeContact(contact)">Delete</button></td>
+    </tr>
+</table> -->
+<br>
+
+<hr>
+<div style="text-align: center;">
+<h2> Task To Be Done </h2>
+<hr>
+<table class="lessons-table mat-elevation-z8" border = 2 style="padding-left: 25;">
+    <tr>
+    <th>
+        Employee name
+    </th>
+    <th>
+        Employee ID
+    </th>
+    <th>
+        Task name
+    </th>
+    <th>
+        Task Id
+    </th>
+    <th>
+       Date
+    </th>
+    </tr>
+
+    <tr *ngFor = "let tracker of tracker">
+        <td>
+            {{tracker.empname}}
+        </td>
+        <td>
+            {{tracker.empid}}
+        </td>
+        <td>
+            {{tracker.taskname}}
+        </td>
+        <td>
+            {{tracker.taskid}}
+        </td>
+        <td>
+            {{tracker.date}}
+        </td>
+        <td>
+            <button (click) = removetask(tracker)> Done </button>    
+        </td>
+    </table>
+</div>
