@@ -1,0 +1,47 @@
+[
+  {
+    "label": "What is OOP?",
+    "choices": [
+      { "value": "Object Oriented Procedure", "correct": false },
+      { "value": "Object Oriented Programming", "correct": true },
+      { "value": "None of the Above!", "correct": false },
+      { "value": "All of the above!", "correct": false }
+    ]
+  },
+  {
+    "label": "What is type of a Database?",
+    "choices": [
+      { "value": "MongoDb", "correct": true },
+      { "value": "Java", "correct": false },
+      { "value": "Python", "correct": false },
+      { "value": "PHP", "correct": false }
+    ]
+  },
+  {
+    "label": "What is type of Programming Language",
+    "choices": [
+      { "value": "MSSQL", "correct": false },
+      { "value": "MongoDb", "correct": false },
+      { "value": "SQL", "correct": false },
+      { "value": "Python", "correct": true }
+    ]
+  },
+  {
+    "label": "What is fullform of SQL?",
+    "choices": [
+      { "value": "Both B & C", "correct": false },
+      { "value": "Sequential Query Language", "correct": false },
+      { "value": "Structured Query Language", "correct": true },
+      { "value": "None of the above!", "correct": false }
+    ]
+  },
+  {
+    "label": "WHat does i++ mean?",
+    "choices": [
+      { "value": "Increment by 2", "correct": false },
+      { "value": "Decrement by 1", "correct": false },
+      { "value": "Increment by 1", "correct": true },
+      { "value": "None of the above!", "correct": false }
+    ]
+  }
+]
